@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "O back-end deve ser desenvolvido em Node.js, TypeScript, Banco de Dados Acebasse e Express. Ele deve ser responsável por armazenar as tarefas em um banco de dados Acebasse e disponibilizá-las para o front-end. Você deve criar rotas para criar, atualizar e excluir tarefas.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "dotenv": "^16.3.1",
+    "firebase-admin": "^11.10.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/firebase": "^3.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase": "^10.0.0",
+    "nodemon": "^3.0.1",
+    "zod": "^3.21.4"
+  }
+}

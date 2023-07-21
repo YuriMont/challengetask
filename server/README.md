@@ -1,0 +1,1 @@
+O back-end deve ser desenvolvido em Node.js, TypeScript, Banco de Dados Acebasse e Express. Ele deve ser responsável por armazenar as tarefas em um banco de dados Acebasse e disponibilizá-las para o front-end. Você deve criar rotas para criar, atualizar e excluir tarefas.
