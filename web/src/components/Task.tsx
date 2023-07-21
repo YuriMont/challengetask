@@ -1,19 +1,14 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
-import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
-import MuiAccordion, { AccordionProps } from "@mui/material/Accordion";
-import MuiAccordionSummary, {
-  AccordionSummaryProps,
-} from "@mui/material/AccordionSummary";
-import MuiAccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import Modal from "@mui/material/Modal";
-import { Delete, Edit } from "@mui/icons-material";
 import { useState } from "react";
-import { TaskForm } from "./TaskForm";
-import { Close } from "@mui/icons-material";
 import { api } from "../lib/axios";
 import { useNavigate } from "react-router-dom";
+import { AccordionProps, AccordionSummaryProps, Modal, Typography } from "@mui/material";
+import MuiAccordion from "@mui/material/Accordion";
+import MuiAccordionSummary from "@mui/material/AccordionSummary";
+import MuiAccordionDetails from "@mui/material/AccordionDetails";
+import { ArrowForwardIosSharp, Close, Delete, Edit } from "@mui/icons-material";
+import { TaskForm } from "./TaskForm";
 
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -33,7 +28,7 @@ const Accordion = styled((props: AccordionProps) => (
 const AccordionSummary = styled((props: AccordionSummaryProps) => (
   <MuiAccordionSummary
     expandIcon={
-      <ArrowForwardIosSharpIcon
+      <ArrowForwardIosSharp
         style={{ color: "white" }}
         sx={{ fontSize: "0.9rem" }}
       />
@@ -115,7 +110,7 @@ export function Task(props: TaskProps) {
           </div>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>{props.description}</Typography>
+          <Typography variant="subtitle2">{props.description}</Typography>
         </AccordionDetails>
       </Accordion>
 

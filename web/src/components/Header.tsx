@@ -1,9 +1,9 @@
 import { Button, Modal, Typography } from "@mui/material";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import { useState } from "react";
-import { TaskForm } from "./TaskForm";
 import { Close } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
+import { TaskForm } from "./TaskForm";
 
 export function Header() {
   const [open, setOpen] = useState(false);
